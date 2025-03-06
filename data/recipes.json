@@ -1,0 +1,53 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Quick Pasta Primavera",
+      "ingredients": ["pasta", "broccoli", "carrots", "bell peppers", "olive oil", "garlic", "parmesan"],
+      "cookingTime": 20,
+      "difficulty": "easy",
+      "instructions": [
+        "Boil pasta according to package instructions",
+        "Sauté vegetables in olive oil and garlic",
+        "Combine pasta and vegetables",
+        "Top with parmesan"
+      ],
+      "cuisine": "Italian",
+      "dietary": ["vegetarian"],
+      "servings": 4
+    },
+    {
+      "id": 2,
+      "name": "15-Minute Fried Rice",
+      "ingredients": ["rice", "eggs", "peas", "carrots", "soy sauce", "green onions", "oil"],
+      "cookingTime": 15,
+      "difficulty": "easy",
+      "instructions": [
+        "Scramble eggs in oil",
+        "Add cooked rice",
+        "Add vegetables",
+        "Season with soy sauce",
+        "Garnish with green onions"
+      ],
+      "cuisine": "Asian",
+      "dietary": [],
+      "servings": 4
+    },
+    {
+      "id": 3,
+      "name": "Quick Bean Tacos",
+      "ingredients": ["black beans", "tortillas", "lettuce", "tomatoes", "cheese", "avocado", "lime"],
+      "cookingTime": 10,
+      "difficulty": "easy",
+      "instructions": [
+        "Heat beans",
+        "Warm tortillas",
+        "Assemble tacos with toppings",
+        "Squeeze lime juice on top"
+      ],
+      "cuisine": "Mexican",
+      "dietary": ["vegetarian"],
+      "servings": 3
+    }
+  ]
+}

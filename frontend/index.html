@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Recipe Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍳 Random Recipe Generator</h1>
+            <nav>
+                <button class="nav-btn active" data-tab="generator">Recipe Generator</button>
+                <button class="nav-btn" data-tab="planner">Meal Planner</button>
+            </nav>
+        </header>
+
+        <main>
+            <section id="generator" class="tab-content active">
+                <div class="search-container">
+                    <div class="ingredients-input">
+                        <input type="text" id="ingredient" placeholder="Enter ingredients you have...">
+                        <button id="add-ingredient">Add</button>
+                    </div>
+                    <div id="ingredients-list" class="tags-container"></div>
+                    
+                    <div class="filters">
+                        <select id="dietary">
+                            <option value="">Any Diet</option>
+                            <option value="vegetarian">Vegetarian</option>
+                            <option value="vegan">Vegan</option>
+                        </select>
+                        <select id="cuisine">
+                            <option value="">Any Cuisine</option>
+                            <option value="Italian">Italian</option>
+                            <option value="Asian">Asian</option>
+                            <option value="Mexican">Mexican</option>
+                        </select>
+                    </div>
+                    
+                    <button id="generate" class="primary-btn">Generate Random Recipe!</button>
+                </div>
+
+                <div id="recipe-display" class="recipe-card hidden">
+                    <h2 id="recipe-name"></h2>
+                    <div class="recipe-meta">
+                        <span id="cooking-time"></span>
+                        <span id="difficulty"></span>
+                        <span id="servings"></span>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="ingredients-section">
+                            <h3>Ingredients</h3>
+                            <ul id="recipe-ingredients"></ul>
+                        </div>
+                        <div class="instructions-section">
+                            <h3>Instructions</h3>
+                            <ol id="recipe-instructions"></ol>
+                        </div>
+                    </div>
+                    <button id="save-recipe" class="secondary-btn">Save to Meal Plan</button>
+                </div>
+            </section>
+
+            <section id="planner" class="tab-content">
+                <div class="weekly-planner">
+                    <h2>Weekly Meal Planner</h2>
+                    <div class="week-grid">
+                        <div class="day-column">
+                            <h3>Monday</h3>
+                            <div class="meal-slot" data-day="monday"></div>
+                        </div>
+                        <div class="day-column">
+                            <h3>Tuesday</h3>
+                            <div class="meal-slot" data-day="tuesday"></div>
+                        </div>
+                        <div class="day-column">
+                            <h3>Wednesday</h3>
+                            <div class="meal-slot" data-day="wednesday"></div>
+                        </div>
+                        <div class="day-column">
+                            <h3>Thursday</h3>
+                            <div class="meal-slot" data-day="thursday"></div>
+                        </div>
+                        <div class="day-column">
+                            <h3>Friday</h3>
+                            <div class="meal-slot" data-day="friday"></div>
+                        </div>
+                    </div>
+                    <button id="generate-shopping-list" class="primary-btn">Generate Shopping List</button>
+                </div>
+                
+                <div id="shopping-list" class="hidden">
+                    <h3>Shopping List</h3>
+                    <ul id="shopping-items"></ul>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
